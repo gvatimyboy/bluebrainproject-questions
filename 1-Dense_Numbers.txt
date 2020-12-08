@@ -1,0 +1,79 @@
+Dense Numbers
+=============
+
+Specification
+-------------
+
+A positive integer is called dense if the average of its digits in decimal representation is strictly higher than 7.0.
+
+For instance:
+ - the number 1,249 is not dense, i.e. (1+2+4+9)/4 = 4.0,
+ - the number 77 is not dense, i.e. (7+7)/2 = 7.0,
+ - the number 976 is dense, i.e. (9+7+6)/3 = 7.33
+
+Write a function that, given 2 integers representing a range, returns the number of dense integers in the interval
+[start..end] (boundaries included). 'start' and 'end' take their values in 0 .. 200,000,000 and 'start' is lower or
+equal to 'end'.
+
+
+    function countDenseNumbersInInterval(start, end) {
+        let result;
+        // your code goes here
+	return result;
+    }
+
+    let countDense = countDenseNumbersInInterval (parseInt(process.argv[2]), parseInt(process.argv[3]));
+    console.log(countDense);
+
+
+
+For example, calling the function countDenseNumbersInInterval(9947, 9965) would execute as follow:
+
+	9947 7.25 Yes 
+	9948 7.50 Yes 
+	9949 7.75 Yes 
+	9950 5.75
+	9951 6.00
+	9952 6.25
+	9953 6.50
+	9954 6.75
+	9955 7.00
+	9956 7.25 Yes 
+	9957 7.50 Yes
+	9958 7.75 Yes 
+	9959 8.00 Yes 
+	9960 6.00
+	9961 6.25
+	9962 6.50
+	9963 6.75
+	9964 7.00
+	9965 7.25 Yes
+
+and for this interval the function should return 8. The output of the program should be 8. 
+
+Note: the program’s output above is only there for debugging purposes, the function is not supposed to print anything.
+
+
+Questions
+---------
+
+	1. Using the provided code (DenseNumbers.js) in NodeJS, implement an algorithm that satisfies the problem specification. 
+	   Assess time complexity of your algorithm.
+
+	2. Discuss how you would optimize your algorithm to improve time complexity. 
+	   If time allows, you can provide an implementation of your solution.
+
+
+Answers from candidate:
+-----------------------
+
+Question 1: The algorithm I wrote iterates once over the array of numbers inside the provided range (inside function "countDenseNumbersInInterval"). For each of these iterations, it will iterate over every digit of the current number (inside the function "isNumberDense"). The time complexity of the algorithm will depend on the length of the range array as well as the length of every number in it. However, because the length of each number in the range depends on the length of the range itself, complexity is: O((end-start)*log(end)).
+
+
+Question 2: One way to optimize the algorithm would be to break out of the second iteration if the number being currently checked for density cannot surpass the average of 7.0 with its remaining digits. Ex: By knowing the length of the number 1111456 when iterating, we can know already by the second 1 that the number won't be dense.
+
+
+Comments from candidate
+-----------------------
+
+//(Please write here any comment you may want to make)

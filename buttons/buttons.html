@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Timothée Barattin" />
+    <title>Timothée Barattin's Buttons</title>
+
+    <link href="style.css" rel="stylesheet"></link>
+  </head>
+  <body>
+    <script>
+      for (var i = 1; i <= 10; i++) {
+        var elem = document.createElement('button');
+        elem.setAttribute('id', i);
+        elem.innerHTML = 'Button n° ' + i;
+        elem.addEventListener('click', function (e) {
+          console.log(e.srcElement.id);
+        });
+        document.body.appendChild(elem);
+      }
+    </script>
+  </body>
+</html>

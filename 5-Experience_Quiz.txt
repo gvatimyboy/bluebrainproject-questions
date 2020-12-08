@@ -1,0 +1,58 @@
+Experience Quiz
+===============
+
+Please classify the list of skills below between the 5 following categories, representing your expertise.
+
+This list aims at providing us a general overview of your skills.
+
+Categories
+----------
+
+1: I know nothing more about this technology than some articles I've read
+- Flow
+- ReactJS
+- D3.js
+- Docker
+- nginx
+- RDF
+- WebGL
+- WebAssembly
+- Ruby
+- Scala
+
+2: I've dabbled with it in a small project / I have limited expertise
+- Advanced Web APIs (WebSockets, Web Workers...)
+- AngularJs (Angular 1)
+- SVG
+- Web Components
+
+3: I have a moderate expertise (used it in real projects for less than 2 years)
+- Modern DOM API (querySelector(), etc)
+- Webpack
+- OAuth
+- Python
+
+4: I have a solid expertise (used it in real projects for more than 2 years, or being active in the community)
+- ES5
+- ES2015 and beyond
+- HTML5 tags (<article>, <footer>...)
+- CSS 3
+- Advanced CSS (variables, flexbox, grid layout, animations...)
+- NodeJS
+- Typescript
+- Angular (Angular 2 - 4...)
+- Redux
+
+5: I am a guru (using it since the early days / knowing all the details / core contributor / book author)
+- I am not a guru (yet)
+
+Skills
+------
+
+
+
+
+Comments from candidate
+-----------------------
+
+//(Please write here any comment you may want to make)

@@ -1,0 +1,45 @@
+Incremental timeout
+===================
+
+Specifications
+--------------
+
+Write a program that prints all the numbers from 1 to 100. Each number x should be printed x seconds after the previous number.
+The program should end right after printing the last number (no timeout).
+
+The execution of the program would go like this:
+
+    // wait 1 second
+    1
+    // wait for 2 seconds
+    2
+    // wait for 3 seconds
+    3
+    ...
+    // wait for 100 seconds
+    100
+    (program exits without waiting)
+ 
+
+Questions
+---------
+
+ 1. Edit a file named timeout.js implementing a program that satisfies the specification. You're allowed to use any version of Javascript or Typescript.
+
+ 2. Provide a brief description of other ways of solving this problem you can see, with their advantages and drawbacks. Implementation is optional.
+
+ 3. Describe how would you go about unit testing this program that waits a lot. Do not provide an implementation.
+
+Answers from candidate
+----------------------
+
+Question 2: I initially tought of solving this problem with RxJS and Observables using the interval() operator. However, I don't think this would have been allowed since RxJS is a third-party library (even though very popular). When it comes to asynchronous code, I think the only options available are Observables and Promises.
+
+
+Question 3: I'm no expert in unit testing but I would add a parameter to the function allowing us to feed it the upper limit number. Therefore we could feed the function a small number (e.g. 3) for our test and only wait a few seconds to ensure that it's working properly.
+
+
+Comments from candidate
+-----------------------
+
+//(Please write here any comment you may want to make)

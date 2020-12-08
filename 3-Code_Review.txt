@@ -1,0 +1,49 @@
+Code Review
+===========
+
+Code Review is an important part of our development process. Consider the following code snippet a coworker sent you for review:
+
+Code snippet
+------------
+
+    function closure() {
+        return (function() {
+            const arr = []
+            for(var i = 0; i < 10; i++) {
+                arr.push(() => i)
+            }
+            return arr
+        })()
+    }
+    console.log('Make sure that closure()[3]() === 3', closure()[3]() === 3)
+
+Questions
+---------
+
+ 1. Please indicate all the errors you spot in the code and how you would fix them.
+
+ 2. Please indicate any other remark or recommendation you may have to improve the code.
+
+ 3. Please provide your version of the optimal code.
+
+Answers from candidate
+----------------------
+
+Question 1:
+- The variable "i" lives outside the for loop and will get updated with every iteration. I would solve this problem by declaring a new variable inside the for loop that gets its value from the current value of "i" as such:
+	for(var i = 0; i < 10; i++) {
+		const j = i;
+                arr.push(() => j)
+        }
+
+
+Question 2:
+
+
+Question 3:
+
+
+Comments from candidate
+-----------------------
+
+I am not that familiar with closures. I wish I could have done a better job at correcting the code, but that's as far as my understanding goes.

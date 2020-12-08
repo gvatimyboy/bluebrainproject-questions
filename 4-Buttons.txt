@@ -1,0 +1,25 @@
+Buttons
+=======
+
+Specifications
+--------------
+
+Create a file named "Buttons.html". It should be a valid HTML5 document that will display a page containing 10 buttons.
+
+Each button has its own number, from 1 to 10. When a user activates a button, a message appears with the button value.
+
+For example, if the user activates the button with the number 4, a message with the text "4" will be shown.
+
+If you have time, make the page look good by adding relevant CSS styling.
+
+Notes
+-----
+
+Please only use plain Javascript, HTML and CSS, no library nor framework.
+
+There are multiple ways to satisfy any part of these requirements, please implement your favorite way.
+
+Comments from candidate
+-----------------------
+
+//(Please write here any comment you may want to make)
